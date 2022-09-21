@@ -18,10 +18,7 @@
      ],
      "@screens/*":[
       "./src/screens/*"
-     ],
-     "@stheme/*":[
-      "./src/theme/*"
-     ],
+     ],   
      "@utils/*":[
       "./src/utils/*"
      ],
