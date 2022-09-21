@@ -5,13 +5,9 @@ export const Container = styled.View`
   flex: 1;
   align-items: center;
   justify-content: center;
-  background-color: ${({theme}) => theme.COLORS.RED_DARK}
+  background-color: ${({theme}) => theme.COLORS.GRAY_600};
   
   
 
 `
 
-export const Title = styled.Text`
-  font-size: 32px;
-  color: #fff;
-`
