@@ -1,4 +1,4 @@
-import { StatusBar } from 'expo-status-bar';
+import { StatusBar } from 'react-native';
 
 
 import { ThemeProvider } from 'styled-components';
@@ -24,9 +24,12 @@ export default function App() {
     <ThemeProvider theme={theme}>
 
       {fontsLoaded ? <Grupos /> : <Loading /> }
-      
+      <StatusBar 
+      barStyle="light-content"
+      backgroundColor="transparent"
+      translucent />
     </ThemeProvider>
-
+    
   );
 }
 
