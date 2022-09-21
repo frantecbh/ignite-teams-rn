@@ -8,7 +8,7 @@ import theme from './src/theme';
 
 
 import { Grupos } from '@screens/Grupos';
-import { ActivityIndicator } from 'react-native';
+import { Loading } from '@components/Loading';
 
 
 
@@ -23,7 +23,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
 
-      {fontsLoaded ? <Grupos /> : <ActivityIndicator /> }
+      {fontsLoaded ? <Grupos /> : <Loading /> }
       
     </ThemeProvider>
 
