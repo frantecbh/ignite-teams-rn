@@ -9,6 +9,7 @@ import theme from './src/theme';
 
 import { Grupos } from '@screens/Grupos';
 import { Loading } from '@components/Loading';
+import { NewGroup } from '@screens/NewGroup';
 
 
 
@@ -23,7 +24,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
 
-      {fontsLoaded ? <Grupos /> : <Loading /> }
+      {fontsLoaded ? <NewGroup /> : <Loading /> }
       <StatusBar 
       barStyle="light-content"
       backgroundColor="transparent"
