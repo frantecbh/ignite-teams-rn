@@ -7,10 +7,11 @@ import { Highlight } from '@components/Highlight';
 
 
 import { Container,  } from './styles';
+import { ListEmpty } from '@components/ListEmpty';
 
 export function Grupos() {
 
-  const [groups, setGroups] = useState<string[]>(['Galera da Rocket', 'Amigos'])
+  const [groups, setGroups] = useState<string[]>([])
  
 
   return (
@@ -24,7 +25,8 @@ export function Grupos() {
     renderItem={({item}) => (
         <GroupCard title={item} />
     )}
-    
+    contentContainerStyle={groups.length === 0 && {flex: 1}}
+    ListEmptyComponent={() => <ListEmpty message='Que tal cadastrar a primeira turma?' /> }
     />
       
     </Container>
