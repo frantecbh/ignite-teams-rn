@@ -8,6 +8,7 @@ import { Highlight } from '@components/Highlight';
 
 import { Container,  } from './styles';
 import { ListEmpty } from '@components/ListEmpty';
+import { Button } from '@components/Button';
 
 export function Grupos() {
 
@@ -29,6 +30,8 @@ export function Grupos() {
     ListEmptyComponent={() => <ListEmpty message='Que tal cadastrar a primeira turma?' /> }
     />
       
+      <Button title='Criar nova turma' />
+
     </Container>
 
 
